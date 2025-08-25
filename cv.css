@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: lightblue;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    border-bottom: 3px solid lightblue;
+}
+
+/* Resume Section */
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    background-color: black;
+    min-height: 100vh;
+    padding: 8rem 9% 5rem;
+}
+
+.resume-img img {
+    width: 220px;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px lightblue;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.resume-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px lightblue;
+}
+
+.resume-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: lightblue;
+}
+
+.resume-content p {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.resume-content a {
+    color: lightblue;
+    font-weight: 600;
+    border-bottom: 2px solid lightblue;
+    transition: 0.3s ease;
+}
+
+.resume-content a:hover {
+    color: white;
+    border-color: white;
+}
+
+
+@media(max-width: 995px) {
+    .resume {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .resume-img img {
+        width: 160px;
+    }
+}
